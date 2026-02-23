@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="KubyResults">
+    <listeners>
+        <listener class-name="kuby.web.extentReport.MyReportListner"/>
+    </listeners>
+    <test thread-count="1" parallel="classes" name="kuby_test">
+        <classes>
+            <!--class name="kuby.web.testCases.KubyLoginTestCases"/-->
+               <class name="kuby.web.testCases.KubyCompanionBookingTest"/>
+
+        </classes>
+    </test> <!-- Kuby_test -->
+</suite> <!-- Kuby -->
